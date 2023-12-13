@@ -1,0 +1,78 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #ebf3ebad;
+}
+
+.registration-container {
+  background-color: #101010;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(234, 229, 229, 0.943);
+  overflow: hidden;
+  width: 300px;
+  margin: auto;
+}
+.registration-container h2{
+  color: #ccc;
+}
+
+.registration-form {
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #90becd;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: #ffffffec;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Style for invalid input */
+input:invalid {
+  border-color: #ff6b6b;
+}
+
+
+
+/* Style for valid input */
+input:valid {
+  border-color: #4caf50;
+}
+
+/* Style for validation message */
+input:valid + label::after {
+  content: ' ✔ Valid';
+  color: #4caf50;
+}
